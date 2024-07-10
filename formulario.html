@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Rubik+Mono+One&display=swap');
+        </style>
+    <link rel="stylesheet" href="formulario.css">
+    <title>Leanny</title>
+</head>
+<body>
+    <header>
+        <a href="./home.html"><h1 class="h1-header">Leanny</h1></a>
+        <img src="https://static.vecteezy.com/system/resources/previews/013/218/086/original/red-rose-transparent-free-png.png">
+    </header>
+    <!-- FORMULARIO -->
+    <div class="container">
+        <h2 class="formulario-title">Información de envío</h2>
+        <form action="">
+            <div class="input-form input-nombre">
+                <label for="nombre">Apellido y nombre</label>
+                <input type="text" name="nombre" required> 
+            </div>
+            <div class="input-direccion">
+                <hr>
+                <div>
+                    <h3>Dirección</h3>
+                </div>
+                <div class="container-datos">
+                    <div class="input-datos">
+                        <div class="input-form">
+                            <label>Calle</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-form">
+                            <label >Numero</label>
+                            <input type="number" required>
+                        </div>
+                    </div>
+                    <div class="input-datos2">
+                        <div class="input-form">
+                            <label for="localidad">Localidad</label>
+                            <input type="text" name="localidad" required>
+                        </div>
+                        <div class="input-form">
+                            <label for="CP">CP</label>
+                            <input type="number" name="CP" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-form">
+                    <div class="selector">
+                        <label for="prod">Producto:</label>
+                        <select id="lista-productos" name="prod">
+                            <option value="empty">Ninguno</option>
+                            <option>Buzo Gothie</option>
+                            <option>Remera Charly Garcia</option>
+                            <option>Buzo AC DC</option>
+                            <option>Mochila AC DC</option>
+                            <option>Campera Jean</option>
+                            <option>Musculosa AC DC</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="cantidad">
+                    <label for="cant">Cantidad:</label>
+                    <input id="cantidad" type="number" max="3" min="1" required name="cant">
+                </div>
+            </div>
+            <button onclick="confirmacion()" id="comprar" type="button">Enviar</button>
+        </form>
+    </div>
+    <script src="formulario.js"></script>
+</body>
+</html>

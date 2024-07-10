@@ -1,0 +1,104 @@
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body{
+    margin: 0;
+    background: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #111;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#333, #222);
+    border-radius: 0 0 50px 50px;
+    box-shadow: #ffffff5d 0px 0px 100px 0px;
+    border-bottom: #111 solid 10px;
+}
+
+.h1-header{
+    padding: 50px;
+    padding-right: 0;
+    color: rgb(145, 1, 1);
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 40px;
+}
+
+img{
+    width: 50px;
+}
+
+form{
+    height: 50vh;
+    width: 33vw;
+    background-color: #222;
+    margin: auto;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5%;
+    margin-top: 15vh;
+    box-shadow: #2c2c2cd3 0px 0px 30px;
+}
+
+
+.h1-form{
+    text-align: center;
+    margin: 3vh;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 50px;
+    color: #ddd;
+}
+
+input{
+    width: 50%;
+    padding: 10px;
+    margin: 2% 25%;
+    background: #333;
+    border: transparent;
+    border-bottom: none;
+    border-left: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+input:focus{
+    color: #ededed;
+}
+
+button{
+    width: 25%;
+    padding: 15px;
+    margin-left: 25%;
+    background-color: rgb(94, 39, 39);
+    color: #ededed;
+    border: solid 3px #2c1515;
+    border-radius: 50px;
+}
+
+label{
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #ddd;
+}
+
+section{
+    height: 60vh;
+}
+
+h1, label{
+    font-family: "Didact Gothic", sans-serif;
+}

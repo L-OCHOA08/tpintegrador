@@ -1,0 +1,272 @@
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient( 87grad,#111, #111 ,#111,rgb(83, 27, 27), #111, #111, #111);
+    background-size: 50%;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#333, #222);
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 0vh;
+    border-radius: 0 0 50px 50px;
+    box-shadow: #ffffff5d 0px 0px 100px 0px;
+    border-bottom: #111 solid 10px;
+}
+
+.logo-header{
+    width: 50px;
+}
+
+.contenedor-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.h1-header{
+    margin-left: 50px;
+    color: rgb(145, 1, 1);
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
+    color: #ddd;
+}
+
+li{
+    font-size: 18px;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+#catalogo-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 10vh;
+}
+
+.linea-izq{
+    width: 30%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.linea-der{
+    width: 30%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.h1-cat{
+    color: #fff;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 80px;
+    padding: 10px;
+}
+
+#catalogo-img{
+    width: 100%;
+    height: 170vh;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 3vw;
+    position: relative;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 80vh 80vh;
+
+    margin: auto;
+    border-radius: 50px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    scale: 1;
+    transition: cubic-bezier(0,.85,.95,.96) .6s;
+    align-items: center;
+    background-color: transparent;
+    width: 80%;
+    border-radius: 100px;
+    background-color: #ffffff56;
+}
+
+
+.prod-img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.3);
+    transition: cubic-bezier(0,.85,.95,.96) 1s;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+
+.producto .prod-img:hover{
+    filter: brightness(1);
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+
+.h1-prod, .p-prod{
+    color: #000;
+    margin: 0px;
+    align-self: flex-start;
+    padding-left: 20%;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.p-prod{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+.button-compra{
+    text-decoration: none;
+    color: rgb(94, 39, 39);
+    background: #cdcdcd;
+    width: 30%;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    transition: cubic-bezier(0,.85,.95,.96) .6s;
+}
+
+.button-compra:hover{
+    scale: 1.1;
+}
+
+
+#comentarios{
+    width: 100%;
+    height: auto;
+    background: rgb(94, 39, 39);
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    border-top: #2c1515 solid 5px;
+    align-items: baseline;
+}
+
+.coments{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.title-coments{
+    font-size: 30px;
+    color: #ededed;
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+    outline: none;
+    border-radius: 10px;
+    border: solid #2c1515 5px;
+    background-color: #111;
+    color: #fff;
+    resize: none;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 20px;
+    font-size: 16px;
+}
+
+#button-coments{
+    width: 20%;
+    margin-top: 5%;
+    padding: 15px;
+    border:transparent;
+    border-radius: 10px;
+    background-color: #2c1515;
+    color: #ededed;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 900;
+}
+
+#coments-users{
+    padding: 20px;
+}
+
+#caja-comentarios{
+    display: flex;
+    flex-direction: column;
+}
+
+#user-info{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    gap: 20px;
+}
+
+.user-logo{
+    width: 40px;
+    background: #fff;
+    border: 2px #000 solid;
+    border-radius: 50%;
+}
+
+.user-name{
+    font-size: 20px;
+    color: #fff;
+}
+
+.comentario-usuario{
+    text-align: center;
+    color: #fff;
+    padding-left: 10%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+}
+
+.footer-info, .footer-info2{
+    color: #ededed;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.footer-info{
+    margin-left: 10%;
+}
+
+.footer-info2{
+    margin-right: 10%;
+}
