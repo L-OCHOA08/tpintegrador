@@ -130,7 +130,7 @@ h1, label{
     }
     
     form{
-        height: 50vh;
+        height: auto;
         width: 85vw;
         background-color: #222;
         margin: auto;
@@ -155,7 +155,7 @@ h1, label{
     input{
         width: 60%;
         padding: 10px;
-        margin: 2% 20%;
+        margin: 2% 20% 10% 20%;
         background: #333;
         border: transparent;
         border-bottom: none;
@@ -167,6 +167,7 @@ h1, label{
 
     button{
         width: 40%;
+        margin-bottom: 10%;
         padding: 15px;
         margin-left: 20%;
         background-color: rgb(94, 39, 39);
