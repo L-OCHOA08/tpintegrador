@@ -53,7 +53,7 @@ function usuario() {
     let contenedorUsuario = document.getElementById(`coments-users`)
     contenedorUsuario.appendChild(contenedorInfo);
     contenedorInfo.setAttribute("style", "display:flex; flex-direction:column")
-    contenedorInfo.setAttribute("style", "border-left: #111 50px double; margin: 10px 0; width:auto; max-width: 800px; min-width:800px; background-color:#222; ")
+    contenedorInfo.setAttribute("style", "border-left: #111 40px double; margin: 10px 0; width:100%; max-width: 100%; min-width:100%; background-color:#222; ")
     userInfo()
     userLogo()
     comentarioUsuario()

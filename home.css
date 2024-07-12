@@ -94,7 +94,6 @@ li{
     position: relative;
     grid-template-columns: 33vw 33vw 33vw;
     grid-template-rows: 80vh 80vh;
-
     margin: auto;
     border-radius: 50px;
 }
@@ -269,4 +268,192 @@ footer{
 
 .footer-info2{
     margin-right: 10%;
+}
+
+@media (min-width: 350px) and (max-width: 900px) {
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+    .contenedor-titulo{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1-header{
+        margin-left: 20%;
+        color: rgb(145, 1, 1);
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 7vw;
+    }
+
+    .logo-header{
+        width: 0px;
+    }
+    
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+        margin-right: 10%;
+        color: #ddd;
+    }
+
+    li{
+        font-size: 14px;
+        font-family: "Didact Gothic", sans-serif;
+        text-align: center;
+    }
+    
+    #catalogo-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+
+    .linea-arriba{
+        width: 90%;
+        height: 2px;
+        background-color: #fff;
+    }
+    
+    .linea-abajo{
+        width: 90%;
+        height: 2px;
+        background-color: #fff;
+    }
+    
+    .h1-cat{
+        color: #fff;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 20vw;
+        padding: 0px;
+        margin: 10px;
+    }
+    
+    #catalogo-img{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        row-gap: 3vw;
+        position: relative;
+        grid-template-columns: 100vw;
+        grid-template-rows:100vh;
+        margin: auto;
+        border-radius: 50px;
+        margin-bottom: 10vh;
+    }
+
+    .producto{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        scale: 1;
+        transition: cubic-bezier(0,.85,.95,.96) .6s;
+        align-items: center;
+        background-color: transparent;
+        width: 90%;
+        border-radius: 100px;
+    }
+    
+    .prod-img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(1);
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    
+    .producto .prod-img:hover{
+        filter: brightness(1);
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0%;
+    }
+    
+    .h1-prod{
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .p-prod{
+        padding-left: 10px;
+    }
+    
+    .h1-prod, .p-prod{
+        color: #ededed;
+    }
+
+    .button-compra{
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        width: 50%;
+    }
+
+    #comentarios{
+        flex-direction: column;
+    }
+
+    .coments{
+        align-items: center;
+        margin: auto;
+    }
+
+    .title-coments{
+        font-size: 30px;
+        color: #ededed;
+        padding-left: 30px;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #button-coments{
+        width: 40%;
+    }
+
+    #coments-users{
+        width: 100%;
+        padding: 3%;
+    }
+
+    #coments-users:only-child{
+        width: 80%;
+    }
+
+    #caja-comentarios{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-info, .footer-info2{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .footer-info{
+        margin-left: 0;
+        width: 70%;
+    }
+    
+    .footer-info2{
+        margin-right: 0;
+    }
 }
