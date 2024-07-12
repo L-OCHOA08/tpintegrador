@@ -12,6 +12,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #111;
+    height: 100vh;
 }
 
 header{
@@ -101,4 +102,76 @@ section{
 
 h1, label{
     font-family: "Didact Gothic", sans-serif;
+}
+
+@media (min-width:350px) and (max-width:900px) {
+    header{
+        width: 100%;
+        height: 10vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(#333, #222);
+        border-radius: 0 0 50px 50px;
+        box-shadow: #ffffff5d 0px 0px 100px 0px;
+        border-bottom: #111 solid 10px;
+    }
+    
+
+    .h1-header{
+        padding-right: 50px;
+        color: rgb(145, 1, 1);
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 40px;
+    }
+
+    img{
+        width: 0px;
+    }
+    
+    form{
+        height: 50vh;
+        width: 85vw;
+        background-color: #222;
+        margin: auto;
+        border-radius: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5%;
+        margin-top: 15vh;
+        box-shadow: #2c2c2cd3 0px 0px 30px;
+    }
+    
+    .h1-form{
+        text-align: center;
+        margin: 3vh;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 10vw;
+        color: #ddd;
+    }
+
+    input{
+        width: 60%;
+        padding: 10px;
+        margin: 2% 20%;
+        background: #333;
+        border: transparent;
+        border-bottom: none;
+        border-left: none;
+        outline: none;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    button{
+        width: 40%;
+        padding: 15px;
+        margin-left: 20%;
+        background-color: rgb(94, 39, 39);
+        color: #ededed;
+        border: solid 3px #2c1515;
+        border-radius: 50px;
+    }
 }
